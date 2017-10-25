@@ -12,7 +12,7 @@ public class VectorHelper {
     private ArrayList<Double> vecteur = new ArrayList<Double>();
 
     /**
-     * un constreucteur par defaut de la class VectorHelper*/
+     * un constreucteur par defaut de la class VectorHelper quii ne cotient pas de parametre*/
     public void VectorHelper() {
 
     }
