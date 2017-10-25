@@ -164,14 +164,14 @@ public class VectorHelper {
          * on crre un vecteur de deux valeurs on met la premiere case pour le min et la 2eme pour le max
          */
 
-        Double [] res  = new Double[2];
+        Double [] res1  = new Double[2];
 
         /**
          * on inisialise le min a la premiere valeurs du vecteur V
          * on inisialise le max a la premiere valeurs du vecteur V
          */
-        res[0] = v.get(0);
-        res[1] = v.get(0);
+        res1[0] = v.get(0);
+        res1[1] = v.get(0);
 
 
         /**
@@ -181,8 +181,8 @@ public class VectorHelper {
 
         for (int i = 1 ; i < v.size() ; i++){
 
-            if ( res[1] < v.get(i) )	{		res[1] = v.get(i) ; 		}
-            if ( res[0] > v.get(i) )  { 		res[0] = v.get(i) ; 		}
+            if ( res1[1] < v.get(i) )	{		res1[1] = v.get(i) ; 		}
+            if ( res1[0] > v.get(i) )  { 		res1[0] = v.get(i) ; 		}
         }
 
 
@@ -190,7 +190,7 @@ public class VectorHelper {
          * retourne les resultat trouver c'est a dire la valeur min et max sous forme d un vecteur
          */
 
-        return (res);
+        return (res1);
     }
 
 
