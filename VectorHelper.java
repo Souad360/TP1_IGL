@@ -141,7 +141,6 @@ public class VectorHelper {
          * a une case de vecteur de retour mais en commençant par la taille maximal vers la premitere case
          */
 
-
         for(i = 0 ; i < v.size() ; i++)
         {
             this.vecteur.add(v.get(j-1));
@@ -158,31 +157,29 @@ public class VectorHelper {
      */
 
     public Double [] Max_et_Min(ArrayList<Double> v){
-
-
         /**
          * on crre un vecteur de deux valeurs on met la premiere case pour le min et la 2eme pour le max
          */
-
-        Double [] res2  = new Double[2];
+        Double [] res1  = new Double[2];
 
         /**
          * on inisialise le min a la premiere valeurs du vecteur V
          * on inisialise le max a la premiere valeurs du vecteur V
          */
-        res2[0] = v.get(0);
-        res2[1] = v.get(0);
 
+        res1[0] = v.get(0);
+        res1[1] = v.get(0);
 
         /**
          * on parcourt le vecteur V puis a chaque fois qand trouve une valeur inferieure au min( res[0] )
          * on ecrase ce dernier avec cette valeur ; meme chose pour le max (res[1] )
          */
-
         for (int i = 1 ; i < v.size() ; i++){
 
-            if ( res2[1] < v.get(i) )	{		res2[1] = v.get(i) ; 		}
-            if ( res2[0] > v.get(i) )  { 		res2[0] = v.get(i) ; 		}
+
+            if ( res1[1] < v.get(i) )	{		res1[1] = v.get(i) ; 		}
+            if ( res1[0] > v.get(i) )  { 		res1[0] = v.get(i) ; 		}
+
         }
 
 
@@ -190,7 +187,8 @@ public class VectorHelper {
          * retourne les resultat trouver c'est a dire la valeur min et max sous forme d un vecteur
          */
 
-        return (res2);
+        return (res1);
+
     }
 
 
