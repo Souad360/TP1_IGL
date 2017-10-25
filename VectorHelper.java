@@ -134,9 +134,7 @@ public class VectorHelper {
     public ArrayList<Double>  Inverser_Vector(ArrayList<Double>  v)
     {
         int i ;			int j = v.size();
-
-        /**
-         *  le vecteur de retour aura la meme taille avec le vecteur d'entre V
+        /**         *  le vecteur de retour aura la meme taille avec le vecteur d'entre V
          * on parcour le vecteur V de la premiere case a la taille maximal et a chaque fois on affect la valeur lu
          * a une case de vecteur de retour mais en commençant par la taille maximal vers la premitere case
          */
@@ -160,7 +158,7 @@ public class VectorHelper {
         /**
          * on crre un vecteur de deux valeurs on met la premiere case pour le min et la 2eme pour le max
          */
-        Double [] res1  = new Double[2];
+        Double [] res2  = new Double[2];
 
         /**
          * on inisialise le min a la premiere valeurs du vecteur V
@@ -175,7 +173,6 @@ public class VectorHelper {
          * on ecrase ce dernier avec cette valeur ; meme chose pour le max (res[1] )
          */
         for (int i = 1 ; i < v.size() ; i++){
-
 
             if ( res1[1] < v.get(i) )	{		res1[1] = v.get(i) ; 		}
             if ( res1[0] > v.get(i) )  { 		res1[0] = v.get(i) ; 		}
