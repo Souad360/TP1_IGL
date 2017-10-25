@@ -160,7 +160,7 @@ public class VectorHelper {
         /**
          * on crre un vecteur de deux valeurs on met la premiere case pour le min et la 2eme pour le max
          */
-        Double [] res1  = new Double[2];
+        Double [] res3  = new Double[2];
 
         /**
          * on inisialise le min a la premiere valeurs du vecteur V
