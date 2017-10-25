@@ -12,7 +12,7 @@ public class VectorHelper {
     private ArrayList<Double> vecteur = new ArrayList<Double>();
 
     /**
-     * un constreucteur par defaut de la class VectorHelper*/
+     * un constreucteur par defaut de la class VectorHelper quii ne cotient pas de parametre*/
     public void VectorHelper() {
 
     }
@@ -30,8 +30,8 @@ public class VectorHelper {
         for (int i=0;i<vec.size();i++)
         {
 
-            for (int j=0;j<vec.size()-1;j++){
-                /**on test et on permute on utilisons une variable de sauvgarde */
+             for (int j=0;j<vec.size()-1;j++){
+                /**----------on test et on permute on utilisons une variable de sauvgarde------ */
                 if (vec.get(j)>vec.get(j+1)){
                     /**x une variable pour le sauvgarde*/
                     Double x;
@@ -134,13 +134,10 @@ public class VectorHelper {
     public ArrayList<Double>  Inverser_Vector(ArrayList<Double>  v)
     {
         int i ;			int j = v.size();
-
-        /**
-         *  le vecteur de retour aura la meme taille avec le vecteur d'entre V
+        /**         *  le vecteur de retour aura la meme taille avec le vecteur d'entre V
          * on parcour le vecteur V de la premiere case a la taille maximal et a chaque fois on affect la valeur lu
          * a une case de vecteur de retour mais en commençant par la taille maximal vers la premitere case
          */
-
 
         for(i = 0 ; i < v.size() ; i++)
         {
@@ -158,31 +155,28 @@ public class VectorHelper {
      */
 
     public Double [] Max_et_Min(ArrayList<Double> v){
-
-
         /**
          * on crre un vecteur de deux valeurs on met la premiere case pour le min et la 2eme pour le max
          */
-
-        Double [] res  = new Double[2];
+        Double [] res2  = new Double[2];
 
         /**
          * on inisialise le min a la premiere valeurs du vecteur V
          * on inisialise le max a la premiere valeurs du vecteur V
          */
-        res[0] = v.get(0);
-        res[1] = v.get(0);
 
+        res1[0] = v.get(0);
+        res1[1] = v.get(0);
 
         /**
          * on parcourt le vecteur V puis a chaque fois qand trouve une valeur inferieure au min( res[0] )
          * on ecrase ce dernier avec cette valeur ; meme chose pour le max (res[1] )
          */
-
         for (int i = 1 ; i < v.size() ; i++){
 
-            if ( res[1] < v.get(i) )	{		res[1] = v.get(i) ; 		}
-            if ( res[0] > v.get(i) )  { 		res[0] = v.get(i) ; 		}
+            if ( res1[1] < v.get(i) )	{		res1[1] = v.get(i) ; 		}
+            if ( res1[0] > v.get(i) )  { 		res1[0] = v.get(i) ; 		}
+
         }
 
 
@@ -190,7 +184,8 @@ public class VectorHelper {
          * retourne les resultat trouver c'est a dire la valeur min et max sous forme d un vecteur
          */
 
-        return (res);
+        return (res1);
+
     }
 
 
