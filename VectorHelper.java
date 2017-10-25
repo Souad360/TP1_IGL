@@ -30,8 +30,8 @@ public class VectorHelper {
         for (int i=0;i<vec.size();i++)
         {
 
-            for (int j=0;j<vec.size()-1;j++){
-                /**on test et on permute on utilisons une variable de sauvgarde */
+             for (int j=0;j<vec.size()-1;j++){
+                /**----------on test et on permute on utilisons une variable de sauvgarde------ */
                 if (vec.get(j)>vec.get(j+1)){
                     /**x une variable pour le sauvgarde*/
                     Double x;
